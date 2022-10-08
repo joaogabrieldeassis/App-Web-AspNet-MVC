@@ -1,13 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddMvc();
+builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
 var app = builder.Build();
 
-app.UseMvc(routes =>
+if (!app.Environment.IsDevelopment())
 {
-    routes.MapRoute("default","{controller = Home}/{action=Index}/{id?}");
-});
+    app.UseHsts();
+}
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();
 

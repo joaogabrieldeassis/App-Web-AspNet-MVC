@@ -8,6 +8,7 @@ namespace storemvc.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("Index")]
         public IActionResult Index()
         {
             return View();

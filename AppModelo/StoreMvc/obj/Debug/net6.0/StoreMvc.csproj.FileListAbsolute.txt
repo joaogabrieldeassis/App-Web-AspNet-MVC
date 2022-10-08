@@ -19,3 +19,5 @@ C:\App-Web-AspNet-MVC\appmodelo\storemvc\obj\Debug\net6.0\refint\StoreMvc.dll
 C:\App-Web-AspNet-MVC\appmodelo\storemvc\obj\Debug\net6.0\StoreMvc.pdb
 C:\App-Web-AspNet-MVC\appmodelo\storemvc\obj\Debug\net6.0\StoreMvc.genruntimeconfig.cache
 C:\App-Web-AspNet-MVC\appmodelo\storemvc\obj\Debug\net6.0\ref\StoreMvc.dll
+C:\App-Web-AspNet-MVC\AppModelo\StoreMvc\obj\Debug\net6.0\StoreMvc.RazorAssemblyInfo.cache
+C:\App-Web-AspNet-MVC\AppModelo\StoreMvc\obj\Debug\net6.0\StoreMvc.RazorAssemblyInfo.cs
