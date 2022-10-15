@@ -21,3 +21,5 @@ C:\App-Web-AspNet-MVC\appmodelo\storemvc\obj\Debug\net6.0\StoreMvc.genruntimecon
 C:\App-Web-AspNet-MVC\appmodelo\storemvc\obj\Debug\net6.0\ref\StoreMvc.dll
 C:\App-Web-AspNet-MVC\AppModelo\StoreMvc\obj\Debug\net6.0\StoreMvc.RazorAssemblyInfo.cache
 C:\App-Web-AspNet-MVC\AppModelo\StoreMvc\obj\Debug\net6.0\StoreMvc.RazorAssemblyInfo.cs
+C:\App-Web-AspNet-MVC\AppModelo\StoreMvc\bin\Debug\net6.0\libman.json
+C:\App-Web-AspNet-MVC\AppModelo\StoreMvc\bin\Debug\net6.0\StoreMvc.staticwebassets.runtime.json
