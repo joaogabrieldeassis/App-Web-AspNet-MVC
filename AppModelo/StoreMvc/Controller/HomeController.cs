@@ -6,8 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace storemvc.Controllers
 {
+    [Route("")]
+    [Route("controller")]
     public class HomeController : Controller
     {
+        [Route("")]
         [Route("Index")]
         public IActionResult Index()
         {
