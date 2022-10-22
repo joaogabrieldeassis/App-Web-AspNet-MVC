@@ -21,3 +21,5 @@ C:\App-Web-AspNet-MVC\AppModel\src\JhonStore\obj\Debug\net6.0\JhonStore.genrunti
 C:\App-Web-AspNet-MVC\AppModel\src\JhonStore\obj\Debug\net6.0\ref\JhonStore.dll
 C:\App-Web-AspNet-MVC\appmodel\src\jhonstore\obj\Debug\net6.0\JhonStore.RazorAssemblyInfo.cache
 C:\App-Web-AspNet-MVC\appmodel\src\jhonstore\obj\Debug\net6.0\JhonStore.RazorAssemblyInfo.cs
+C:\App-Web-AspNet-MVC\AppModel\src\JhonStore\bin\Debug\net6.0\libman.json
+C:\App-Web-AspNet-MVC\AppModel\src\JhonStore\bin\Debug\net6.0\JhonStore.staticwebassets.runtime.json
