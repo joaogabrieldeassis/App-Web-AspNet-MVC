@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KY9lFcBVjLF7PcQMGY/KqVzVhB5G/eW53WasII1cOUc=",
+  "Hash": "nC/sBmHNCZWbZ0uCn4rX13eLcCyhbVTL8VkbWUsTnfE=",
   "Source": "JhonStore",
   "BasePath": "_content/JhonStore",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\css\\StyleSheet.css",
+      "SourceId": "JhonStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\",
+      "BasePath": "_content/JhonStore",
+      "RelativePath": "css/StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+    },
     {
       "Identity": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
       "SourceId": "JhonStore",
