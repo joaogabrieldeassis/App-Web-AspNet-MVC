@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nC/sBmHNCZWbZ0uCn4rX13eLcCyhbVTL8VkbWUsTnfE=",
+  "Hash": "xzXF+1CN24QbWQLojIR93JqwwAFrsfds5AJazU8CEms=",
   "Source": "JhonStore",
   "BasePath": "_content/JhonStore",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\css\\StyleSheet.css",
+      "Identity": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\css\\sitecss.css",
       "SourceId": "JhonStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\",
       "BasePath": "_content/JhonStore",
-      "RelativePath": "css/StyleSheet.css",
+      "RelativePath": "css/sitecss.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+      "OriginalItemSpec": "wwwroot\\css\\sitecss.css"
+    },
+    {
+      "Identity": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\js\\site.js",
+      "SourceId": "JhonStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\",
+      "BasePath": "_content/JhonStore",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",

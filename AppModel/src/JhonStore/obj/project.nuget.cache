@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WqgCFSytZpiJYEvX8s2j9G8RogmUj0C4dRmWXGX0H/fPu4QDqSp9VH38agPEuKwP+gx9JR4LMFUOJtcHzQgVug==",
+  "dgSpecHash": "30iB6dLCFai25dGirzJhJzbMy4BEt/Z3TXQLS/aE0KJpxvfmPqTh3VnLdp5ofwc0RyRKC35xaHBfnA8IKGmaOQ==",
   "success": true,
   "projectFilePath": "C:\\App-Web-AspNet-MVC\\AppModel\\src\\JhonStore\\JhonStore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512"
+  ],
   "logs": []
 }
