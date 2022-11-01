@@ -2,9 +2,10 @@
 
 namespace JhonStore.Areas.Login.Controllers
 {
+    [Area("Login")]
     public class UserloginController : Controller
     {
-        public IActionResult Index()
+        public IActionResult LoginUser()
         {
             return View();
         }
