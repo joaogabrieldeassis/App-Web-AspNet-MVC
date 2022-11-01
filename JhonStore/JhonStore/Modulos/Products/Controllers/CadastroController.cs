@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace JhonStore.Areas.Products.Controllers
+namespace JhonStore.Modulos.Products.Controllers
 {
     [Area("Products")]
     public class CadastroController : Controller

@@ -15,12 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\App-Web-AspNet-MVC\JhonStore\JhonStore
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Login/Views/Userlogin/LoginUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5cVmlld3NcVXNlcmxvZ2luXExvZ2luVXNlci5jc2h0bWw=
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Login/Views/Userlogin/LoginUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xMb2dpblxWaWV3c1xVc2VybG9naW5cTG9naW5Vc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Products/Views/Cadastro/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdHNcVmlld3NcQ2FkYXN0cm9cSW5kZXguY3NodG1s
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Login/Views/Userlogin/Teste.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xMb2dpblxWaWV3c1xVc2VybG9naW5cVGVzdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Products/Views/Cadastro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xQcm9kdWN0c1xWaWV3c1xDYWRhc3Ryb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Views/Home/Index.cshtml]
@@ -46,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Products/Views/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xQcm9kdWN0c1xWaWV3c1xfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-f2yqbdc3dk
 
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
