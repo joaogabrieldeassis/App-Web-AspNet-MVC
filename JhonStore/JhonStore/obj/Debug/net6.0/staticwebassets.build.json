@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QLEoUGZvdEUHTGD6hB9uADmzNVQQy5LxGeR8liwWG+k=",
+  "Hash": "Pe2LSxjz+qf2TDpcFA7rcBAO14PlCnvWNhbd3Lcqaho=",
   "Source": "JhonStore",
   "BasePath": "_content/JhonStore",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\App-Web-AspNet-MVC\\JhonStore\\JhonStore\\wwwroot\\css\\siteBundle.min.css",
+      "SourceId": "JhonStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\App-Web-AspNet-MVC\\JhonStore\\JhonStore\\wwwroot\\",
+      "BasePath": "_content/JhonStore",
+      "RelativePath": "css/siteBundle.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\siteBundle.min.css"
     },
     {
       "Identity": "C:\\App-Web-AspNet-MVC\\JhonStore\\JhonStore\\wwwroot\\favicon.ico",
