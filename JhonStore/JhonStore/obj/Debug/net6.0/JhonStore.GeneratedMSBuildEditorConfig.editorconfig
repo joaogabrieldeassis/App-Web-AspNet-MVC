@@ -15,32 +15,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\App-Web-AspNet-MVC\JhonStore\JhonStore
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Login/Views/Userlogin/LoginUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xMb2dpblxWaWV3c1xVc2VybG9naW5cTG9naW5Vc2VyLmNzaHRtbA==
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/JoaoTeste/Views/Teste/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSm9hb1Rlc3RlXFZpZXdzXFRlc3RlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Login/Views/Userlogin/Teste.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xMb2dpblxWaWV3c1xVc2VybG9naW5cVGVzdGUuY3NodG1s
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/JoaoTeste/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSm9hb1Rlc3RlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Login/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xMb2dpblxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Login/Views/Userlogin/LoginUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5cVmlld3NcVXNlcmxvZ2luXExvZ2luVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Products/Views/Cadastro/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xQcm9kdWN0c1xWaWV3c1xDYWRhc3Ryb1xJbmRleC5jc2h0bWw=
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Login/Views/Userlogin/Teste.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5cVmlld3NcVXNlcmxvZ2luXFRlc3RlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Products/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xQcm9kdWN0c1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Login/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Vendas/Views/Pedidos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xWZW5kYXNcVmlld3NcUGVkaWRvc1xJbmRleC5jc2h0bWw=
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Products/Views/Cadastro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdHNcVmlld3NcQ2FkYXN0cm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Vendas/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xWZW5kYXNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Products/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdHNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Vendas/Views/Pedidos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVmVuZGFzXFZpZXdzXFBlZGlkb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Vendas/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVmVuZGFzXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Views/Home/Index.cshtml]
