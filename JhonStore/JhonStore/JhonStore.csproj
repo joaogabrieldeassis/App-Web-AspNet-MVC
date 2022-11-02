@@ -12,6 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Modulos\Vendas\Data\" />
+    <Folder Include="Modulos\Vendas\Models\" />
     <Folder Include="Modulos\Login\Data\" />
     <Folder Include="Modulos\Login\Models\" />
     <Folder Include="Modulos\Products\Data\" />

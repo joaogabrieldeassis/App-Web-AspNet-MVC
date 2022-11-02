@@ -23,8 +23,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xMb2dpblxWaWV3c1xVc2VybG9naW5cVGVzdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Login/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xMb2dpblxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Products/Views/Cadastro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xQcm9kdWN0c1xWaWV3c1xDYWRhc3Ryb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Products/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xQcm9kdWN0c1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Vendas/Views/Pedidos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xWZW5kYXNcVmlld3NcUGVkaWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Vendas/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xWZW5kYXNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Views/Home/Index.cshtml]
@@ -50,10 +66,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Modulos/Products/Views/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc1xQcm9kdWN0c1xWaWV3c1xfTGF5b3V0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = b-f2yqbdc3dk
 
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
