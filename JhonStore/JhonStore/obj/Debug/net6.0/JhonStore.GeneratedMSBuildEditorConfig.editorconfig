@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\App-Web-AspNet-MVC\JhonStore\JhonStore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/Joao2Teste/Views/Joaogabriel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSm9hbzJUZXN0ZVxWaWV3c1xKb2FvZ2FicmllbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/App-Web-AspNet-MVC/JhonStore/JhonStore/Areas/JoaoTeste/Views/Teste/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSm9hb1Rlc3RlXFZpZXdzXFRlc3RlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
