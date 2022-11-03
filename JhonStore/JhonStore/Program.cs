@@ -5,8 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<Carro, FabricaCarro>();
-builder.Services.AddScoped<Pagar, Sistema>();
 builder.Services.AddScoped<IPedidoRepository,PedidoRepository>();
 var app = builder.Build();
 
