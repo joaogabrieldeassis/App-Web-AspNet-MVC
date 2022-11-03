@@ -12,10 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Joao2Teste\Controllers\" />
     <Folder Include="Areas\Joao2Teste\Data\" />
     <Folder Include="Areas\Joao2Teste\Models\" />
-    <Folder Include="Areas\Joao2Teste\Views\" />
     <Folder Include="Areas\JoaoTeste\Data\" />
     <Folder Include="Areas\JoaoTeste\Models\" />
     <Folder Include="Areas\Vendas\Data\" />

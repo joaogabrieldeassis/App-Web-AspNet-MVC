@@ -1,4 +1,5 @@
-﻿using JhonStore.Models;
+﻿using JhonStore.Controllers.Data;
+using JhonStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,15 +7,16 @@ namespace JhonStore.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IPedidoRepository _pedidoRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IPedidoRepository pedidoRepository)
         {
-            _logger = logger;
+            _pedidoRepository = pedidoRepository;
         }
 
         public IActionResult Index()
         {
+            var receiveId = _pedidoRepository.ObterPedido();
             return View();
         }
 

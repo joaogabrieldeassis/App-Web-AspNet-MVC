@@ -1,10 +1,12 @@
+using JhonStore.Controllers.Data;
 using Microsoft.AspNetCore.Mvc.Razor;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<Carro, FabricaCarro>();
+builder.Services.AddScoped<IPedidoRepository,PedidoRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

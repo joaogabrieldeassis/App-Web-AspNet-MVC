@@ -4,6 +4,7 @@ namespace JhonStore.Controllers.Data
 {
     public class PedidoRepository : IPedidoRepository
     {
+        
         public Pedido ObterPedido()
         {
             return new Pedido();
