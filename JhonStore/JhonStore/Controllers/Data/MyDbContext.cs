@@ -1,6 +1,16 @@
-﻿namespace JhonStore.Controllers.Data
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace JhonStore.Controllers.Data
 {
-    public class MyDbContext
+    public class MyDbContext : DbContext
     {
+        private readonly ILoggerFactory _logger = LoggerFactory.Create(x => x.AddConsole());
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            
+        options.UseLoggerFactory(_logger)
+                .EnableSensitiveDataLogging()
+                .UseSqlServer("Server=localhost,1433;Database=JhonStore;User ID=sa;Password=;Trusted_Connection=False; TrustServerCertificate=True;");
+        }
     }
 }
