@@ -1,6 +1,8 @@
 ﻿using JhonStore.Controllers.Data;
 using JhonStore.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace JhonStore.Controllers
 {
@@ -23,6 +25,13 @@ namespace JhonStore.Controllers
             _context.SaveChanges();
 
             var studantsTwo = _context.Alunos.Find(aluno.Id);
+            var studantTree = _context.Alunos.FirstOrDefault(x => x.Nome == "Jesus");
+            var studantFor = _context.Alunos.Where(x => x.DataDeNascimento == DateTime.Now);
+
+            aluno.Email = "joaoassis";
+            _context.SaveChanges();
+
+            _context.Entry(aluno.Id).State = EntityState.Deleted;
             return View();
         }
     }
