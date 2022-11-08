@@ -10689,11 +10689,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\App-Web-AspNet-MVC\\JhonStore\\JhonStore\\JhonStore.csproj",
+      "projectUniqueName": "C:\\App-Web-AspNet-MVC\\jhonstore\\jhonstore\\JhonStore.csproj",
       "projectName": "JhonStore",
-      "projectPath": "C:\\App-Web-AspNet-MVC\\JhonStore\\JhonStore\\JhonStore.csproj",
+      "projectPath": "C:\\App-Web-AspNet-MVC\\jhonstore\\jhonstore\\JhonStore.csproj",
       "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-      "outputPath": "C:\\App-Web-AspNet-MVC\\JhonStore\\JhonStore\\obj\\",
+      "outputPath": "C:\\App-Web-AspNet-MVC\\jhonstore\\jhonstore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

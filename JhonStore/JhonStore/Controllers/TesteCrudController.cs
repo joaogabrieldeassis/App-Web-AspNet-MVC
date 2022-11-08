@@ -19,6 +19,7 @@ namespace JhonStore.Controllers
             {
                 Nome = "Jesus",
                 Email = "joao",
+                FirstName = "Gabriel",
                 DataDeNascimento = DateTime.Now
             };
             _context.Alunos.Add(aluno);
@@ -32,7 +33,7 @@ namespace JhonStore.Controllers
             _context.SaveChanges();
 
             _context.Entry(aluno.Id).State = EntityState.Deleted;
-            return View();
+            return View("As");
         }
     }
 }

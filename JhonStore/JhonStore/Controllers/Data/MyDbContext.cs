@@ -13,7 +13,7 @@ namespace JhonStore.Controllers.Data
             
         options.UseLoggerFactory(_logger)
                 .EnableSensitiveDataLogging()
-                .UseSqlServer("Server=localhost,1433;Database=JhonStore;User ID=sa;Password=1q2w3e4r@#$;Trusted_Connection=False; TrustServerCertificate=True;");
+                .UseSqlServer("Server=localhost,1433;Database=JhonStore;User ID=sa;Password=;Trusted_Connection=False; TrustServerCertificate=True;");
         }
     }
 }
