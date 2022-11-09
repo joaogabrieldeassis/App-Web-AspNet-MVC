@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HJft6og1OBk8vefPJxSXLhS2RvD1wMhMHwE+84kdWuLvGRQkkynLuiL5umEF+trTIph5bUObbZT2c7V9sVyeJw==",
+  "success": true,
+  "projectFilePath": "C:\\App-Web-AspNet-MVC\\AspNetIdentity\\AspNetIdentity\\AspNetIdentity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.0\\microsoft.aspnetcore.identity.ui.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
