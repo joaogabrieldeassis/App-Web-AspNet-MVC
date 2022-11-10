@@ -8,12 +8,12 @@ namespace JhonStore.Controllers.Data
         private readonly ILoggerFactory _logger = LoggerFactory.Create(x => x.AddConsole());
 
         public DbSet<Aluno> Alunos{ get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        /*protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             
         options.UseLoggerFactory(_logger)
                 .EnableSensitiveDataLogging()
                 .UseSqlServer("Server=localhost,1433;Database=JhonStore;User ID=sa;Password=1q2w3e4r@#$;Trusted_Connection=False; TrustServerCertificate=True;");
-        }
+        }*/
     }
 }
