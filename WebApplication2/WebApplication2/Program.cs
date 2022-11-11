@@ -7,11 +7,9 @@ var connectionString = builder.Configuration.GetConnectionString("WebApplication
 
 builder.Services.AddDbContext<WebApplication2Context>(options =>
     options.UseSqlServer(connectionString));
-
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddDefaultUI()
     .AddEntityFrameworkStores<WebApplication2Context>();
-
+builder.Services.AddRazorPages();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -27,12 +25,10 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
-app.UseRouting();
-app.UseAuthentication();;
-
+app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
