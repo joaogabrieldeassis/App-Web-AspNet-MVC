@@ -8,7 +8,12 @@ var connectionString = builder.Configuration.GetConnectionString("WebApplication
 builder.Services.AddDbContext<WebApplication2Context>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    
     .AddEntityFrameworkStores<WebApplication2Context>();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("PodeExcluir", policy => policy.RequireClaim("PodeExcluir"));
+});
 builder.Services.AddRazorPages();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
