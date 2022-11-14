@@ -34,6 +34,11 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
+        [ClaimsAuthorize("Home","Secruty")]
+        public IActionResult ClaimsCustom()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
