@@ -5,6 +5,7 @@ using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -18,8 +19,12 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
-        [Authorize]
+        
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult Secruty()
         {
             return View();
         }
