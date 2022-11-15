@@ -16,7 +16,7 @@ namespace WebApplication2.Controllers
         {
             _logger = logger;
         }
-
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
