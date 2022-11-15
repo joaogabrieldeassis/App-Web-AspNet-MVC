@@ -36,7 +36,7 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
-        [ClaimsAuthorize("Produtos","Ler")]
+        [ClaimsAuthorize("Produtos", "Ler")]
         public IActionResult ClaimsCustom()
         {
             return View();

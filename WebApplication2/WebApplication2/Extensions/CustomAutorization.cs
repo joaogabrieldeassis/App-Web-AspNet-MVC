@@ -29,6 +29,10 @@ namespace WebApplication2.Extensions
         }
         public void OnAuthorization(AuthorizationFilterContext context)
         {
+            if (!)
+            {
+
+            }
             if (!CustomAutorization.ValidarClaimsUsuarios(context.HttpContext, _claim.Type, _claim.Value))
             {
                 context.Result = new ForbidResult();
