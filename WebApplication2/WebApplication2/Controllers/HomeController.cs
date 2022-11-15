@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApplication2.Extensions;
 using WebApplication2.Models;
 using static WebApplication2.Extensions.CustomAutorization;
 
@@ -35,7 +36,7 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
-        [ClaimsAuthorizeAttribute("Home","Secruty")]
+        [ClaimsAuthorize("Produtos","Ler")]
         public IActionResult ClaimsCustom()
         {
             return View();
