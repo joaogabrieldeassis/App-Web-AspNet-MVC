@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebApplication2.Models;
+using static WebApplication2.Extensions.CustomAutorization;
 
 namespace WebApplication2.Controllers
 {
@@ -34,7 +35,7 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
-        [ClaimsAuthorize("Home","Secruty")]
+        [ClaimsAuthorizeAttribute("Home","Secruty")]
         public IActionResult ClaimsCustom()
         {
             return View();
