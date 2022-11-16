@@ -9,7 +9,8 @@ namespace WebApplication2.Extensions
     {
         public static bool ValidarClaimsUsuarios(HttpContext content, string claimName, string claimValue)
         {
-            return content.User.Identity.IsAuthenticated && content.User.Claims.Any(x => x.Type == claimName && x.Value.Contains(claimValue));
+            return content.User.Identity.IsAuthenticated &&
+            content.User.Claims.Any(x => x.Type == claimName && x.Value.Contains(claimValue));
         }
     }
     public class ClaimsAuthorizeAttribute : TypeFilterAttribute
@@ -29,10 +30,7 @@ namespace WebApplication2.Extensions
         }
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-            if (!)
-            {
-
-            }
+            
             if (!CustomAutorization.ValidarClaimsUsuarios(context.HttpContext, _claim.Type, _claim.Value))
             {
                 context.Result = new ForbidResult();
