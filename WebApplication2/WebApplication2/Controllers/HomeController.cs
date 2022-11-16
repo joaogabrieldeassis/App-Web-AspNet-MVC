@@ -41,6 +41,11 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
+        [ClaimsAuthorize("Listar", "Hoteis")]
+        public IActionResult ClaimsAdd()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

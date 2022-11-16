@@ -39,6 +39,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/App-Web-AspNet-MVC/WebApplication2/WebApplication2/Views/Home/ClaimsAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDbGFpbXNBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/App-Web-AspNet-MVC/WebApplication2/WebApplication2/Views/Home/ClaimsCustom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDbGFpbXNDdXN0b20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

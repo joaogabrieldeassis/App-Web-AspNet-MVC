@@ -39,11 +39,5 @@ namespace WebApplication2.Extensions
     }
 }
 
-/*public ClaimsAuthorizeAttribute(string claimName, string claimValue) : base(typeof(RequisitoClaimFilter));
-{
-    Arguments = new Object[] { new Claim(claimName, claimValue) }
-       }
-*/
-
 
 
