@@ -1,10 +1,16 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting.Internal;
 using WebApplication2.Areas.Identity.Data;
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("WebApplication2ContextConnection") ?? throw new InvalidOperationException("Connection string 'WebApplication2ContextConnection' not found.");
 
+var connectionString = builder.Configuration.GetConnectionString("WebApplication2ContextConnection") ?? throw new InvalidOperationException("Connection string 'WebApplication2ContextConnection' not found.");
+builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
+{
+    config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+    config.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.jso",optional:true,reloadOnChange:true);
+});
 AddIdentityConfig(builder);
 ConfigurationIdentity(builder);
 builder.Services.AddRazorPages();
