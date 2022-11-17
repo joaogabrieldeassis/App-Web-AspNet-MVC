@@ -10,6 +10,10 @@ builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
 {
     config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
     config.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.jso",optional:true,reloadOnChange:true);
+    
+    
+
+    
 });
 AddIdentityConfig(builder);
 ConfigurationIdentity(builder);
@@ -22,6 +26,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
