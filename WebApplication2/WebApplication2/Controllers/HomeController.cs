@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.Data;
 using System.Diagnostics;
 using WebApplication2.Extensions;
 using WebApplication2.Models;
@@ -24,6 +26,7 @@ namespace WebApplication2.Controllers
         
         public IActionResult Privacy()
         {
+            
             return View();
         }
         [Authorize(Roles = "Admin")]
@@ -46,10 +49,33 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [Route("erro/{id:length(3,3)}")]
+        public IActionResult Error(int id)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var erroDaModel = new ErrorViewModel();
+            if (id == 500)
+            {
+                erroDaModel.Message = "Ocorreu um erro! Tente novamente mais tarde";
+                erroDaModel.Titulo = "Ocorreu um erro";
+                erroDaModel.ErrorCode = id;
+            }
+            else if (id == 404)
+            {
+                erroDaModel.Message = "Ocorreu um erro! Tente novamente mais tarde";
+                erroDaModel.Titulo = "Pagina não encontrada";
+                erroDaModel.ErrorCode = id;
+            }
+            else if (id == 403)
+            {
+                erroDaModel.Message = "Ocorreu um erro! Tente novamente mais tarde";
+                erroDaModel.Titulo = "Você não tem permissão para fazer isso";
+                erroDaModel.ErrorCode = id;
+            }
+            else 
+            {
+                return StatusCode(404);
+            }
+            return View("Error",erroDaModel);
         }
     }
 }

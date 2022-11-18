@@ -10,9 +10,12 @@ builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
 {
     config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
     config.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.jso",optional:true,reloadOnChange:true);
-    
-    
 
+
+    if (builder.Environment.IsProduction())
+    {
+        config.AddUserSecrets<Program>();
+    }
     
 });
 AddIdentityConfig(builder);
@@ -23,7 +26,8 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseExceptionHandler("/erro/500");
+    app.UseStatusCodePagesWithRedirects("/erro/{0}");
     app.UseHsts();
 }
 

@@ -33,7 +33,7 @@ namespace WebApplication2.Extensions
             
             if (!CustomAutorization.ValidarClaimsUsuarios(context.HttpContext, _claim.Type, _claim.Value))
             {
-                context.Result = new ForbidResult();
+                context.Result = new StatusCodeResult(403);
             }
         }
     }
