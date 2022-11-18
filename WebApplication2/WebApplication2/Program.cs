@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting.Internal;
 using WebApplication2.Areas.Identity.Data;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,13 +29,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
@@ -46,7 +44,7 @@ app.Run();
 
 void ConfigurationDependenciInjection(WebApplicationBuilder builder)
 {
-
+  
 }
 void ConfigurationIdentity(WebApplicationBuilder builder)
 {
@@ -63,3 +61,4 @@ void AddIdentityConfig(WebApplicationBuilder builder)
     builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
         .AddEntityFrameworkStores<WebApplication2Context>();
 }
+ 
