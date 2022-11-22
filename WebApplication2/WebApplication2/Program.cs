@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.Areas.Identity.Data;
+using WebApplication2.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("WebApplication2ContextConnection") ?? throw new InvalidOperationException("Connection string 'WebApplication2ContextConnection' not found.");
@@ -16,9 +19,14 @@ builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
     }
     
 });
+
 AddIdentityConfig(builder);
 ConfigurationIdentity(builder);
-
+ConfigurationDependenciInjection(builder);
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<AuditoriaFilter>();
+});
 builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
 
@@ -45,7 +53,7 @@ app.Run();
 
 void ConfigurationDependenciInjection(WebApplicationBuilder builder)
 {
-  
+    builder.Services.AddScoped<AuditoriaFilter>();
 }
 void ConfigurationIdentity(WebApplicationBuilder builder)
 {
