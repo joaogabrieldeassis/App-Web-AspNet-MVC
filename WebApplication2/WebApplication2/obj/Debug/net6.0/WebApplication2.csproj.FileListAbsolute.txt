@@ -272,3 +272,7 @@ C:\App-Web-AspNet-MVC\WebApplication2\WebApplication2\bin\Debug\net6.0\runtimes\
 C:\App-Web-AspNet-MVC\WebApplication2\WebApplication2\obj\Debug\net6.0\WebApplication2.MvcApplicationPartsAssemblyInfo.cs
 C:\App-Web-AspNet-MVC\WebApplication2\WebApplication2\bin\Debug\net6.0\appsettings.Production.json
 C:\App-Web-AspNet-MVC\WebApplication2\WebApplication2\bin\Debug\net6.0\appsettings.Staging.json
+C:\App-Web-AspNet-MVC\WebApplication2\WebApplication2\bin\Debug\net6.0\KissLog.dll
+C:\App-Web-AspNet-MVC\WebApplication2\WebApplication2\bin\Debug\net6.0\KissLog.AspNetCore.dll
+C:\App-Web-AspNet-MVC\WebApplication2\WebApplication2\bin\Debug\net6.0\KissLog.CloudListeners.dll
+C:\App-Web-AspNet-MVC\WebApplication2\WebApplication2\bin\Debug\net6.0\KissLog.RestClient.dll

@@ -18,6 +18,7 @@ builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
 });
 AddIdentityConfig(builder);
 ConfigurationIdentity(builder);
+
 builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
 
