@@ -1,6 +1,6 @@
 ﻿namespace AppMVC.Models
 {
-    public class Fornecedor
+    public class Fornecedor : Entity
     {
     }
 }

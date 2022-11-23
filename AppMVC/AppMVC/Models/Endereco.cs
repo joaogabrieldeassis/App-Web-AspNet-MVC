@@ -1,6 +1,6 @@
 ﻿namespace AppMVC.Models
 {
-    public class Endereco
+    public class Endereco : Entity
     {
     }
 }
