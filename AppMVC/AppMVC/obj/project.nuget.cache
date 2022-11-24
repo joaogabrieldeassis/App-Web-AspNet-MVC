@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C6ANfGtTjB6+uTM4K0ZN59WU/nP415GJvbmg+GLbw6QY9D9T7OP12w6DAY5FBrZDoYzcUZkfglq3ivP6mt1giw==",
+  "dgSpecHash": "k2Nsys6wwPTARcURT9ojqKABUEXXFWjIGC4qbvOTzyPw15g9ejN8aERXuig0YsFpb0OBrt2EYqFa6zLVYJ2+fQ==",
   "success": true,
-  "projectFilePath": "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj",
+  "projectFilePath": "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",

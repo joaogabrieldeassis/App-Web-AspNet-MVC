@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj": {}
+    "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj": {}
   },
   "projects": {
-    "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj": {
+    "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj",
+        "projectUniqueName": "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj",
         "projectName": "AppMVC",
-        "projectPath": "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj",
+        "projectPath": "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\obj\\",
+        "outputPath": "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
