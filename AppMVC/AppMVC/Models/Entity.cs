@@ -1,6 +1,6 @@
 ﻿namespace AppMVC.Models
 {
-    public class Entity
+    public abstract class Entity
     {
         protected Entity()
         {
