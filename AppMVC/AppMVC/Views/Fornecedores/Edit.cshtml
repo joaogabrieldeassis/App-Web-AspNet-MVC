@@ -24,8 +24,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="TipoDeFornecedor" class="control-label"></label>
-                <select asp-for="TipoDeFornecedor" class="form-control"></select>
-                <span asp-validation-for="TipoDeFornecedor" class="text-danger"></span>
+                <div>
+                    <input type="radio" value="1" asp-for="TipoDeFornecedor" checked="@((int)Model.TipoDeFornecedor == 1)" />Pessoa Fisica<br />
+                    <input type="radio" value="2" asp-for="TipoDeFornecedor" checked="@((int)Model.TipoDeFornecedor == 2)"/>Pessoa Juridica<br />
+                </div>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
