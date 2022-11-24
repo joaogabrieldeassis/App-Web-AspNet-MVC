@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj": {}
+    "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj": {}
   },
   "projects": {
-    "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj": {
+    "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj",
+        "projectUniqueName": "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj",
         "projectName": "AppMVC",
-        "projectPath": "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\AppMVC.csproj",
+        "projectPath": "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\AppMVC.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\App-Web-AspNet-MVC\\AppMVC\\appmvc\\obj\\",
+        "outputPath": "C:\\App-Web-AspNet-MVC\\AppMVC\\AppMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -60,6 +60,10 @@
               "version": "[6.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.10, )"
             }
