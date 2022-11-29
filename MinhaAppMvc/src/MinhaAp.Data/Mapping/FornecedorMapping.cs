@@ -22,11 +22,11 @@ namespace MinhaAp.Data.Mapping
                 .IsRequired()
                 .HasColumnType("varchar(14)");
 
-            //Um Fornecedor tem um Endereço e um Endereço tem um Fornecedor
+            //Um Fornecedor tem UM Endereço e UM Endereço tem UM Fornecedor
             builder.HasOne(x => x.Endereco)
                 .WithOne(x => x.Fornecedor);
 
-            //Um Fornecedor tem muitos produtos e um Produto tem um Fornecedor
+            //Um Fornecedor tem MUITOS produtos e um Produto tem UM Fornecedor
             builder.HasMany(x => x.Produtos)
                 .WithOne(x => x.Fornecedor)
                 .HasForeignKey(x => x.FornecedorId);
