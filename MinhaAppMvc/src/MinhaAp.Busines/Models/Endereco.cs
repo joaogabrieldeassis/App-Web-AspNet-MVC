@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MinhaApp.Busines.Models
+namespace MinhaAp.Busines.Models
 {
-    public class Endereco
+    public class Endereco : Entity
     {
         public Guid FornecedorId { get; set; }
         public string Logradouro { get; set; }

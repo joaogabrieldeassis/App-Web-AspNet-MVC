@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MinhaApp.Busines.Models.Enuns
+namespace MinhaAp.Busines.Models.Enuns
 {
     public enum TipoDoFornecedor
     {
