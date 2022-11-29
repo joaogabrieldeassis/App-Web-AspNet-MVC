@@ -10,11 +10,11 @@ namespace MinhaAp.Data.Context
 {
     public class MeuDbContext : DbContext
     {
-      
-        public MeuDbContext(DbContextOptions options): base (options)
-        {
 
-        }
+
+        public MeuDbContext(DbContextOptions options) : base(options) { }
+
+
         public DbSet<Produto> Products { get; set; }
         public DbSet<Fornecedor> Fornecedores { get; set; }
         public DbSet<Endereco> Enderecos  { get; set; }
