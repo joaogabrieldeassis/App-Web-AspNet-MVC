@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MinhaAp.Busines/1.0.0": {
+        "runtime": {
+          "MinhaAp.Busines.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MinhaAp.Busines/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\bin\Debug\net6.0\MinhaAp.Data.deps.json
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\bin\Debug\net6.0\MinhaAp.Data.dll
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\bin\Debug\net6.0\MinhaAp.Data.pdb
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\bin\Debug\net6.0\MinhaAp.Busines.dll
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\bin\Debug\net6.0\MinhaAp.Busines.pdb
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.csproj.AssemblyReference.cache
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.AssemblyInfoInputs.cache
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.AssemblyInfo.cs
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.csproj.CoreCompileInputs.cache
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.csproj.CopyComplete
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.dll
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\refint\MinhaAp.Data.dll
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.pdb
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\ref\MinhaAp.Data.dll
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\bin\Debug\net6.0\MinhaAp.Data.runtimeconfig.json
+C:\App-Web-AspNet-MVC\MinhaAppMvc\src\MinhaAp.Data\obj\Debug\net6.0\MinhaAp.Data.genruntimeconfig.cache
