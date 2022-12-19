@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MinhaAp.Busines.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,12 @@ namespace Dev.Data.Context
 {
     public class MeuDbContext : DbContext
     {
+        public MeuDbContext(DbContextOptions options) : base(options)
+        {
 
+        }
+        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<Fornecedor> Fornecedores{ get; set; }
     }
 }
