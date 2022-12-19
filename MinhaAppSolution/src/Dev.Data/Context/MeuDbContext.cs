@@ -19,7 +19,7 @@ namespace Dev.Data.Context
         public DbSet<Fornecedor> Fornecedores{ get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        {                                   
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(MeuDbContext).Assembly);
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(x => x.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;
             
