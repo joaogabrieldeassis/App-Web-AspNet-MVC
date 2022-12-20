@@ -11,48 +11,54 @@ using System.Threading.Tasks;
 
 namespace Dev.Data.Repository
 {
-    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
+    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity, new()
     {
         protected readonly MeuDbContext _context;
         protected readonly DbSet<TEntity> _entities;
 
-        public async Task<IEnumerable<TEntity>> Buscar(Expression<Func<TEntity, bool>> predicate)
+        protected Repository(MeuDbContext context)
+        {
+            _context = context;
+            _entities = context.Set<TEntity>();
+        }
+
+        public virtual async Task<IEnumerable<TEntity>> Buscar(Expression<Func<TEntity, bool>> predicate)
         {
             return await _entities.AsNoTracking().Where(predicate).ToListAsync();
         }
-        public async Task<TEntity> ObterPorId(Guid id)
+        public virtual async Task<TEntity> ObterPorId(Guid id)
         {
-            return await _entities.FirstAsync()
+            return await _entities.FindAsync(id);
         }
 
-        public async Task<List<TEntity>> ObterTodos()
+        public virtual async Task<List<TEntity>> ObterTodos()
         {
-            throw new NotImplementedException();
+            return await _entities.ToListAsync();
         }
-        public async Task Adicionar(TEntity entity)
+        public virtual async Task Adicionar(TEntity entity)
         {
             _entities.Add(entity);
             await SaveChanges();
         }
 
-        public async Task Atualizar(TEntity entity)
+        public virtual async Task Atualizar(TEntity entity)
         {
-            throw new NotImplementedException();
+            _entities.Update(entity);
+            await SaveChanges();
         }       
 
-        public async Task Deletar(Guid id)
+        public virtual async Task Deletar(Guid id)
         {
-            throw new NotImplementedException();
-        }                
-
-        public async Task<int> SaveChanges()
-        {
-            throw new NotImplementedException();
+            
+            _entities.Remove(new TEntity { Id = id});
+            await SaveChanges();
         }
+
+        public async Task<int> SaveChanges() => await _context.SaveChangesAsync();
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context?.Dispose();
         }
     }
 }
