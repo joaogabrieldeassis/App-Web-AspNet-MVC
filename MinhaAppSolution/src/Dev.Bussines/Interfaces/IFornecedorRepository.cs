@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dev.Bussines.Interfaces
 {
-    public interface IFornecedorRepository
+    public interface IFornecedorRepository : IRepository<Fornecedor>
     {
         Task<Fornecedor> ObterFornecedorEndereco(Guid id);
         Task<Fornecedor> ObterFornecedorProdutosEndereco(Guid id);
