@@ -11,7 +11,7 @@ namespace Dev.Bussines.Interfaces
     public interface IRepository<TEntity> : IDisposable where TEntity : Entity
     {
         Task Adicionar(TEntity entity);
-        Task<TEntity> ObterPorId(TEntity entity);
+        Task<TEntity> ObterPorId(Guid id);
         Task Atualizar(TEntity entity);
         Task<List<TEntity>> ObterTodos();
         Task Deletar(Guid id);
