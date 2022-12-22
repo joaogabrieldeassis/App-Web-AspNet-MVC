@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Dev.AppMvc.ViewModels;
 
 namespace MyAppMvc.Data
 {
@@ -9,5 +10,6 @@ namespace MyAppMvc.Data
             : base(options)
         {
         }
+        
     }
 }
