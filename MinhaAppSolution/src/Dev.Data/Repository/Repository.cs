@@ -16,7 +16,8 @@ namespace Dev.Data.Repository
         protected readonly MeuDbContext _context;
         protected readonly DbSet<TEntity> _entities;
 
-        protected Repository(MeuDbContext context)
+        protected Repository(MeuDbContext context) 
+        
         {
             _context = context;
             _entities = context.Set<TEntity>();
@@ -56,9 +57,6 @@ namespace Dev.Data.Repository
 
         public async Task<int> SaveChanges() => await _context.SaveChangesAsync();
 
-        public void Dispose()
-        {
-            _context?.Dispose();
-        }
+        public void Dispose() => _context?.Dispose();
     }
 }
