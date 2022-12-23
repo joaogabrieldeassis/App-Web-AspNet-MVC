@@ -57,9 +57,7 @@ namespace Dev.AppMvc.Controllers
 
         
         public async Task<IActionResult> Edit(Guid id)
-        {
-            
-
+        {            
             var fornecedorViewModel = await ObeterFornecedorProdutoEndereco(id);
             if (fornecedorViewModel == null)
             {
@@ -91,14 +89,10 @@ namespace Dev.AppMvc.Controllers
         {
             var fornecedorViewModel = await ObeterFornecedorEndereco(id);
                 
-            if (fornecedorViewModel == null)
-            {
-                return NotFound();
-            }
+            if (fornecedorViewModel == null)  return NotFound();            
 
             return View(fornecedorViewModel);
         }
-
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
