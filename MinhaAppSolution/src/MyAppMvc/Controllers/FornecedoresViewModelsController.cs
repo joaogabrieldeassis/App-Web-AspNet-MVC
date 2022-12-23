@@ -16,7 +16,6 @@ namespace Dev.AppMvc.Controllers
             _mapper = mapper;
             _fornecedorRepository = fornecedorRepository;
         }
-
         
         public async Task<IActionResult> Index()
         {
