@@ -1,6 +1,8 @@
-﻿namespace Dev.AppMvc.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Dev.AppMvc.Controllers
 {
-    public class BaseControllerBase
+    public class BaseControllerBase : Controller
     {
     }
 }
