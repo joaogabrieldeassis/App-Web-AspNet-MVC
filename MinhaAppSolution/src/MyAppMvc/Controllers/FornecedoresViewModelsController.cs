@@ -8,25 +8,28 @@ using Microsoft.EntityFrameworkCore;
 using Dev.AppMvc.ViewModels;
 using MyAppMvc.Data;
 using Dev.Bussines.Interfaces;
+using AutoMapper;
 
 namespace Dev.AppMvc.Controllers
 {
     public class FornecedoresViewModelsController : Controller
     {
         private readonly IFornecedorRepository _fornecedorRepository;
+        private readonly IMapper _mapper;
 
-        public FornecedoresViewModelsController(IFornecedorRepository fornecedorRepository)
+        public FornecedoresViewModelsController(IFornecedorRepository fornecedorRepository,IMapper mapper)
         {
+            _mapper = mapper;
             _fornecedorRepository = fornecedorRepository;
         }
 
-        // GET: FornecedoresViewModels
+        
         public async Task<IActionResult> Index()
         {
-              return View(await _fornecedorRepository.FornecedorViewModel.ToListAsync());
+              return View(_mapper.Map<IEnumerable<FornecedorViewModel>>( await _fornecedorRepository.ObterTodos()));
         }
 
-        // GET: FornecedoresViewModels/Details/5
+        
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _fornecedorRepository.FornecedorViewModel == null)
@@ -44,15 +47,13 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
-        // GET: FornecedoresViewModels/Create
+        
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: FornecedoresViewModels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Documento,TipoDoFornecedor,Ativo")] FornecedorViewModel fornecedorViewModel)
@@ -67,7 +68,7 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
-        // GET: FornecedoresViewModels/Edit/5
+        
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null || _fornecedorRepository.FornecedorViewModel == null)
@@ -83,9 +84,7 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
-        // POST: FornecedoresViewModels/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,Documento,TipoDoFornecedor,Ativo")] FornecedorViewModel fornecedorViewModel)
@@ -118,7 +117,7 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
-        // GET: FornecedoresViewModels/Delete/5
+        
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _fornecedorRepository.FornecedorViewModel == null)
@@ -136,7 +135,7 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
-        // POST: FornecedoresViewModels/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
