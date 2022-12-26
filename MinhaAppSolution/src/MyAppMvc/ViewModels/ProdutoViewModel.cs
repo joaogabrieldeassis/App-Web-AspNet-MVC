@@ -33,5 +33,6 @@ namespace Dev.AppMvc.ViewModels
         [DisplayName("Ativo?")]
         public bool Ativo { get; set; }
         public FornecedorViewModel Fornecedor { get; set; }
+        public IEnumerable<FornecedorViewModel> Fornecedores{ get; set; }
     }
 }

@@ -8,23 +8,30 @@ using Microsoft.EntityFrameworkCore;
 using Dev.AppMvc.ViewModels;
 using MyAppMvc.Data;
 using Dev.Bussines.Interfaces;
+using AutoMapper;
 
 namespace Dev.AppMvc.Controllers
 {
     public class ProdutOsController : BaseControllerBase
     {
         private readonly IProdutoRepository _produtoRepository;
+        private readonly IFornecedorRepository _fornecedorRepository;
+        private readonly IMapper _mapper;
 
-        public ProdutOsController(IProdutoRepository produtoRepository)
+        public ProdutOsController(IProdutoRepository produtoRepository,
+            IFornecedorRepository fornecedorRepository,
+            IMapper mapper)
         {
             _produtoRepository = produtoRepository;
+            _fornecedorRepository = fornecedorRepository;
+            _mapper = mapper;
         }
+
 
         // GET: ProdutOs
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.ProdutoViewModel.Include(p => p.Fornecedor);
-            return View(await applicationDbContext.ToListAsync());
+            return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores());
         }
 
         // GET: ProdutOs/Details/5
@@ -162,9 +169,11 @@ namespace Dev.AppMvc.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ProdutoViewModelExists(Guid id)
+        private async Task<ProdutoViewModel> ObterProduto(Guid id)
         {
-          return _context.ProdutoViewModel.Any(e => e.Id == id);
+            var produto = _mapper.Map<ProdutoViewModel>(await _produtoRepository.ObterProdutosPorFornecedor(id));
+            produto.Fornecedores = _mapper.Map<IEnumerable<FornecedorViewModel>>(await _fornecedorRepository.ObterTodos());
+            return produto;
         }
     }
 }
