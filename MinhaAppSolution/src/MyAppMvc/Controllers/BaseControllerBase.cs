@@ -2,7 +2,7 @@
 
 namespace Dev.AppMvc.Controllers
 {
-    public class BaseControllerBase : Controller
+    public abstract class BaseControllerBase : Controller
     {
     }
 }
