@@ -19,24 +19,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/FornecedoresViewModels/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzVmlld01vZGVsc1xDcmVhdGUuY3NodG1s
+[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/Fornecedores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/FornecedoresViewModels/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzVmlld01vZGVsc1xEZWxldGUuY3NodG1s
+[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/Fornecedores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/FornecedoresViewModels/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzVmlld01vZGVsc1xEZXRhaWxzLmNzaHRtbA==
+[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/Fornecedores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/FornecedoresViewModels/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzVmlld01vZGVsc1xFZGl0LmNzaHRtbA==
+[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/Fornecedores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/FornecedoresViewModels/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzVmlld01vZGVsc1xJbmRleC5jc2h0bWw=
+[C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/Fornecedores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/App-Web-AspNet-MVC/MinhaAppSolution/src/MyAppMvc/Views/Home/Index.cshtml]

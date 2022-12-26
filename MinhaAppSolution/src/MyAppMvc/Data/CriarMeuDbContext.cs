@@ -28,5 +28,5 @@ namespace Dev.Data.Context
             return new MeuDbContext(optionsBuilder.Options);
         }
     }
- 
+
 }

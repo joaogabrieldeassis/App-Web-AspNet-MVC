@@ -6,12 +6,12 @@ using MinhaAp.Busines.Models;
 
 namespace Dev.AppMvc.Controllers
 {   
-    public class FornecedoresViewModelsController : BaseControllerBase
+    public class FornecedoresController : BaseControllerBase
     {
         private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IMapper _mapper;
 
-        public FornecedoresViewModelsController(IFornecedorRepository fornecedorRepository,IMapper mapper)
+        public FornecedoresController(IFornecedorRepository fornecedorRepository,IMapper mapper)
         {
             _mapper = mapper;
             _fornecedorRepository = fornecedorRepository;
