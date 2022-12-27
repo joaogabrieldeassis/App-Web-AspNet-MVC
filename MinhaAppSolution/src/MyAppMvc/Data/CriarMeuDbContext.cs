@@ -25,7 +25,7 @@ namespace Dev.Data.Context
 
             optionsBuilder.UseSqlServer(connectionString);
 
-            return new MeuDbContext(optionsBuilder.Options);
+            return new MeuDbContext();
         }
     }
 

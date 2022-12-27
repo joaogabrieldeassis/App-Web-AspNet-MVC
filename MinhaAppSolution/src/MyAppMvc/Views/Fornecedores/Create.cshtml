@@ -22,9 +22,9 @@
                 <span asp-validation-for="Documento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TipoDoFornecedor" class="control-label"></label>
-                <input asp-for="TipoDoFornecedor" class="form-control" />
-                <span asp-validation-for="TipoDoFornecedor" class="text-danger"></span>
+                <label asp-for="TipoDoFornecedor" class="control-label"></label><br />
+                <input type="radio" value="1" asp-for="TipoDoFornecedor" checked/> Pessoa Fisica <br/>
+                <input type="radio" value="2" asp-for="TipoDoFornecedor" checked /> Pessoa Juridica <br />
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
@@ -38,7 +38,7 @@
             <partial name="_Endereco">
             <div class="form-group">
                 <input type="submit" value="Cadastrar" class="btn btn-primary" />
-                <a asp-action="Index">Voltar</a>
+                    <a asp-action="Index" class="btn btn-primary"> Voltar</a>
             </div>
         </form>
     </div>
