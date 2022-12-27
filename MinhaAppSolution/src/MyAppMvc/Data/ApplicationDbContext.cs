@@ -10,7 +10,8 @@ namespace MyAppMvc.Data
             : base(options)
         {
         }
-        public DbSet<Dev.AppMvc.ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
+        public DbSet<Dev.AppMvc.ViewModels.EnderecoViewModel> EnderecoViewModel { get; set; }
+        
         
     }
 }
