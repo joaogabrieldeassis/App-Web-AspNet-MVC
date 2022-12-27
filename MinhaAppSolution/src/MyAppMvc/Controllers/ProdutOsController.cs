@@ -33,7 +33,7 @@ namespace Dev.AppMvc.Controllers
         // GET: ProdutOs
         public async Task<IActionResult> Index()
         {
-            return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores());
+            return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores()));
         }
 
         // GET: ProdutOs/Details/5
