@@ -9,7 +9,7 @@ using MyAppMvc.Data;
 
 namespace Dev.Data.Context
 {
-    /*public class CriarMeuDbContext : IDesignTimeDbContextFactory<MeuDbContext>
+    public class CriarMeuDbContext : IDesignTimeDbContextFactory<MeuDbContext>
     {
         public MeuDbContext CreateDbContext(string[] args)
         {
@@ -22,10 +22,10 @@ namespace Dev.Data.Context
 
             var connectionString = configuration
                         .GetConnectionString("DefaultConnection");
-            
+
             optionsBuilder.UseSqlServer(connectionString);
 
             return new MeuDbContext();
         }
-    }*/
+    }
 }
