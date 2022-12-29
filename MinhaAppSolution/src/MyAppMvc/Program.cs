@@ -4,13 +4,14 @@ using Dev.Data.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MyAppMvc.Data;
+using NuGet.Protocol.Core.Types;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<MeuDbContext>();
+        .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddDbContext<MeuDbContext>(options =>
     options.UseSqlServer(connectionString));
@@ -22,7 +23,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
-builder.Services.AddScoped<MeuDbContext>();
+builder.Services.AddScoped<ApplicationDbContext>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
