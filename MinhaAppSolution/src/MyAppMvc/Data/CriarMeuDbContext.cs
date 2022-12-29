@@ -22,11 +22,10 @@ namespace Dev.Data.Context
 
             var connectionString = configuration
                         .GetConnectionString("DefaultConnection");
-
+            
             optionsBuilder.UseSqlServer(connectionString);
 
             return new MeuDbContext();
         }
     }*/
-
 }
