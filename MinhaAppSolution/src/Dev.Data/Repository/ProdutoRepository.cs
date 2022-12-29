@@ -28,7 +28,7 @@ namespace Dev.Data.Repository
            
         }
 
-        public async Task<IEnumerable<Produto>> ObterProdutosPorFornecedores()
+        public async Task<IEnumerable<Produto>> ObterProdutosFornecedores()
         {
             return await _context.Produtos.AsNoTracking().Include(x => x.Fornecedor)
                .OrderBy(x => x.Nome).ToListAsync();
