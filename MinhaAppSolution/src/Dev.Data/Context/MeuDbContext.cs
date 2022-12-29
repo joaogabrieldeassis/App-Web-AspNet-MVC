@@ -10,14 +10,9 @@ namespace Dev.Data.Context
 {
     public class MeuDbContext : DbContext
     {
-        public MeuDbContext(DbContextOptions<MeuDbContext> options) : base(options)
-        {
+        public MeuDbContext(DbContextOptions<MeuDbContext> options) : base(options) {}
 
-        }
-        public MeuDbContext()
-        {
-
-        }        
+        public MeuDbContext() { }        
 
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
@@ -26,8 +21,7 @@ namespace Dev.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {                                   
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(MeuDbContext).Assembly);
-            /*foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(x => x.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;
-            
+            /*foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(x => x.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;            
             base.OnModelCreating(modelBuilder);*/
         }
     }

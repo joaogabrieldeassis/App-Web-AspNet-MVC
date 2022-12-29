@@ -16,16 +16,8 @@ namespace Dev.Data.Repository
         {
 
         }
-        public async Task<Fornecedor> ObterFornecedorEndereco(Guid id)
-        {
+        public async Task<Fornecedor> ObterFornecedorEndereco(Guid id) => await _context.Fornecedores.AsNoTracking().Include(x => x.Endereco).FirstOrDefaultAsync(c => c.Id == id);
 
-            return await _context.Fornecedores.AsNoTracking().Include(x => x.Endereco).FirstOrDefaultAsync(c => c.Id == id);
-        }
-
-        public async Task<Fornecedor> ObterFornecedorProdutosEndereco(Guid id)
-        {
-            return await _context.Fornecedores.AsNoTracking().Include(x => x.Produtos)
-                .Include(x => x.Endereco).FirstOrDefaultAsync(x => x.Id == id);
-        }
+        public async Task<Fornecedor> ObterFornecedorProdutosEndereco(Guid id) => await _context.Fornecedores.AsNoTracking().Include(x => x.Produtos).Include(x => x.Endereco).FirstOrDefaultAsync(x => x.Id == id);
     }
 }
