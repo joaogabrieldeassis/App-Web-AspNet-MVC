@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using Dev.AppMvc.ViewModels;
-using MyAppMvc.Data;
 using Dev.Bussines.Interfaces;
 using AutoMapper;
-using System.Collections;
 using MinhaAp.Busines.Models;
 
 namespace Dev.AppMvc.Controllers
@@ -84,7 +76,7 @@ namespace Dev.AppMvc.Controllers
         {
             if (id != produtoViewModel.Id) return NotFound();
             
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid) return View(produtoViewModel);
             
                 await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoViewModel));
                 return RedirectToAction(nameof(Index));                                    
