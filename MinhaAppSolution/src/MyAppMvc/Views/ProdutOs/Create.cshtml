@@ -30,9 +30,15 @@
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Imagem" class="control-label"></label>
-                <input asp-for="Imagem" class="form-control" />
-                <span asp-validation-for="Imagem" class="text-danger"></span>
+                <label asp-for="ImagemUplade" class="control-label"></label>
+
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="ImagemUplade" asp-for="ImagemUplade">
+                    <label data-browse="Procurar" style="width: 400px" class="custom-file-label" for="ImagemUplade"></label>
+                    <label style="display:none" id="img_nome"></label>
+                    
+                </div>
+                <span asp-validation-for="ImagemUplade" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Valor" class="control-label"></label>
@@ -57,4 +63,14 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $("#ImagemUplade").change(function(){
+            $("#img_nome").text(this.files[0].name);
+            $("img_nome")[0].style.display = 'blok';
+        });
+
+        $("#ImagemUplade").attr("data-val","true");
+        $("#img_nome").attr("data-val-required", "Preencha o campo Imagem");
+    </script>
 }

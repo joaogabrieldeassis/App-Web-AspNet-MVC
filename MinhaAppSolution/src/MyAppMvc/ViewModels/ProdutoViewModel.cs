@@ -20,7 +20,7 @@ namespace Dev.AppMvc.ViewModels
         [StringLength(200, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracters", MinimumLength = 2)]
         public string Descricao { get; set; }
 
-        //public IFormFile ImagemUplade { get; set; }
+        public IFormFile ImagemUplade { get; set; }
 
         public string Imagem { get; set; }
         [Required(ErrorMessage = "O campo {0} é obrigatorio")]
