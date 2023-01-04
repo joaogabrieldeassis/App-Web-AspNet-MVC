@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xwR/hRtrnrXtI7nF35PA4QTbrO00iVvcz1xF272NsCQ=",
+  "Hash": "Hq6L1B/vKedvcXYUxlBlm5sbKhi8cO+LUyzFhMTkfus=",
   "Source": "Dev.AppMvc",
   "BasePath": "_content/Dev.AppMvc",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagens\\6bcd001c-80b1-4b7a-ae0b-6a4f5f805691_Captura de tela_20221208_085706.png"
+    },
+    {
+      "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\Imagens\\a816f370-d662-464b-94d0-2d4d604d2a9e_CodigoLimpo.jpeg",
+      "SourceId": "Dev.AppMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\",
+      "BasePath": "_content/Dev.AppMvc",
+      "RelativePath": "Imagens/a816f370-d662-464b-94d0-2d4d604d2a9e_CodigoLimpo.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\a816f370-d662-464b-94d0-2d4d604d2a9e_CodigoLimpo.jpeg"
     },
     {
       "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\js\\site.js",
