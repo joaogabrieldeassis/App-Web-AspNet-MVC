@@ -21,7 +21,7 @@ namespace Dev.AppMvc.ViewModels
         public string Descricao { get; set; }
 
         [DisplayName("Imagem do Produto")]
-        public IFormFile ImagemUplade { get; set; }
+        public IFormFile? ImagemUplade { get; set; }
 
         public string? Imagem { get; set; }
         [Required(ErrorMessage = "O campo {0} é obrigatorio")]

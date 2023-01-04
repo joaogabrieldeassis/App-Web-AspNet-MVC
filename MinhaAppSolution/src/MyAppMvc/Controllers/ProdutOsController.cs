@@ -95,9 +95,14 @@ namespace Dev.AppMvc.Controllers
                 {
                     return View(produtoViewModel);
                 }
+                produtoViewModelAtualizacao.Imagem = imgPrefixo + produtoViewModel.ImagemUplade.FileName;
             }
-            
-                await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoViewModel));
+            produtoViewModelAtualizacao.Nome = produtoViewModel.Nome;
+            produtoViewModelAtualizacao.Descricao = produtoViewModel.Descricao;
+            produtoViewModelAtualizacao.Valor = produtoViewModel.Valor;
+            produtoViewModelAtualizacao.Ativo = produtoViewModel.Ativo;
+
+            await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoViewModelAtualizacao));
                 return RedirectToAction(nameof(Index));                                    
         }
 
