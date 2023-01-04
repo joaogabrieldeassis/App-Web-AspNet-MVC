@@ -59,10 +59,10 @@ namespace Dev.AppMvc.Controllers
             {
                 return View(produtoViewModel);
             }
-
+            produtoViewModel.Imagem = imagemPrefixo + produtoViewModel.ImagemUplade.FileName;
             await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
-                    
-            return View(produtoViewModel);
+
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: ProdutOs/Edit/5

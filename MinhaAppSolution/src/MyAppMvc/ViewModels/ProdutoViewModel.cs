@@ -23,7 +23,7 @@ namespace Dev.AppMvc.ViewModels
         [DisplayName("Imagem do Produto")]
         public IFormFile ImagemUplade { get; set; }
 
-        public string Imagem { get; set; }
+        public string? Imagem { get; set; }
         [Required(ErrorMessage = "O campo {0} é obrigatorio")]
 
         public decimal Valor { get; set; }
@@ -33,7 +33,7 @@ namespace Dev.AppMvc.ViewModels
 
         [DisplayName("Ativo?")]
         public bool Ativo { get; set; }
-        public FornecedorViewModel Fornecedor { get; set; }
-        public IEnumerable<FornecedorViewModel> Fornecedores{ get; set; }
+        public FornecedorViewModel? Fornecedor { get; set; }
+        public IEnumerable<FornecedorViewModel>? Fornecedores{ get; set; }
     }
 }
