@@ -55,6 +55,10 @@ namespace Dev.AppMvc.Controllers
             if (!ModelState.IsValid) return View(produtoViewModel);
 
             var imagemPrefixo = Guid.NewGuid() + "_";
+            if (! await UploadDoArquivo(produtoViewModel.ImagemUplade, imagemPrefixo))
+            {
+                return View(produtoViewModel);
+            }
 
             await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
                     
