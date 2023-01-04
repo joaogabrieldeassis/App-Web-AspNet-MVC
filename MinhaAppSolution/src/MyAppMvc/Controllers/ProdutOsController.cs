@@ -118,7 +118,7 @@ namespace Dev.AppMvc.Controllers
 
         private async Task<ProdutoViewModel> ObterProduto(Guid id)
         {
-            var produto = _mapper.Map<ProdutoViewModel>(await _produtoRepository.ObterProdutosPorFornecedor(id));
+            var produto = _mapper.Map<ProdutoViewModel>(await _produtoRepository.ObterProdutoFornecedor(id));
             produto.Fornecedores = _mapper.Map<IEnumerable<FornecedorViewModel>>(await _fornecedorRepository.ObterTodos());
             return produto;
         }

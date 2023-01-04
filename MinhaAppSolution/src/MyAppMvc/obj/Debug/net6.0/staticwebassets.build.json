@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vFBVdgZA+4BHGY6EHcsonAONRhDRf2it7Izqik9Y4zQ=",
+  "Hash": "xwR/hRtrnrXtI7nF35PA4QTbrO00iVvcz1xF272NsCQ=",
   "Source": "Dev.AppMvc",
   "BasePath": "_content/Dev.AppMvc",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\Imagens\\6bcd001c-80b1-4b7a-ae0b-6a4f5f805691_Captura de tela_20221208_085706.png",
+      "SourceId": "Dev.AppMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\",
+      "BasePath": "_content/Dev.AppMvc",
+      "RelativePath": "Imagens/6bcd001c-80b1-4b7a-ae0b-6a4f5f805691_Captura de tela_20221208_085706.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\6bcd001c-80b1-4b7a-ae0b-6a4f5f805691_Captura de tela_20221208_085706.png"
     },
     {
       "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\js\\site.js",
