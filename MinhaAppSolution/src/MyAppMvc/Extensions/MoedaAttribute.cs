@@ -4,5 +4,6 @@ namespace Dev.AppMvc.Extensions
 {
     public class MoedaAttribute : ValidationAttribute
     {
+
     }
 }
