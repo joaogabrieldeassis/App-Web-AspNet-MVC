@@ -10,5 +10,6 @@ namespace MyAppMvc.Data
             : base(options)
         {
         }                       
+        public DbSet<Dev.AppMvc.ViewModels.EnderecoViewModel> EnderecoViewModel { get; set; }
     }
 }
