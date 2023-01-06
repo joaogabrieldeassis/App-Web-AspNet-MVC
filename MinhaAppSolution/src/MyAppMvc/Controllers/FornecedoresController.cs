@@ -16,13 +16,13 @@ namespace Dev.AppMvc.Controllers
             _mapper = mapper;
             _fornecedorRepository = fornecedorRepository;
         }
-        
+        [Route("lista-de-fornecedores")]
         public async Task<IActionResult> Index()
         {
               return View(_mapper.Map<IEnumerable<FornecedorViewModel>>( await _fornecedorRepository.ObterTodos()));
         }
 
-        
+        [Route("detalhes-de-fornecedores/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
             var fornecedorViewModel = await ObeterFornecedorEndereco(id);
@@ -35,13 +35,13 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
-        
+        [Route("criar-fornecedor")]
         public IActionResult Create()
         {
             return View();
         }
 
-        
+        [Route("criar-fornecedor")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create( FornecedorViewModel fornecedorViewModel)
@@ -55,7 +55,7 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
-        
+        [Route("editar-fornecedor/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {            
             var fornecedorViewModel = await ObeterFornecedorProdutoEndereco(id);
@@ -66,7 +66,7 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
-        
+        [Route("editar-fornecedor/{id:guid}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, FornecedorViewModel fornecedorViewModel)
@@ -84,7 +84,7 @@ namespace Dev.AppMvc.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        
+        [Route("deletar-fornecedor/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var fornecedorViewModel = await ObeterFornecedorEndereco(id);
@@ -94,6 +94,7 @@ namespace Dev.AppMvc.Controllers
             return View(fornecedorViewModel);
         }
 
+        [Route("deletar-fornecedor/{id:guid}")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
