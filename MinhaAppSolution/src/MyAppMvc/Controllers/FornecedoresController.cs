@@ -115,7 +115,7 @@ namespace Dev.AppMvc.Controllers
             {
                 return NotFound();
             }
-            return PartialView("_AtualizarEndereco",new FornecedorViewModel { Endereco = fornecedor.Endereco})
+            return PartialView("_AtualizarEndereco", new FornecedorViewModel { Endereco = fornecedor.Endereco });
             
         }
 

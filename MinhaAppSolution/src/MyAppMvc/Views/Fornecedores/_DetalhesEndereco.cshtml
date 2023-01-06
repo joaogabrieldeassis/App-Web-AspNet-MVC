@@ -58,7 +58,7 @@
                     @Html.DisplayNameFor(modelItem => modelItem.Endereco.Estado)
                 </td>                  
                 <td>
-                    <a asp-action="AtualizarEndereco" class="btn btn-info" data-modal="" >
+                    <a asp-action="AtualizarEndereco" asp-route-id="@Model.Id" class="btn btn-info" data-modal="">
                         <span class="fa fa-pencil-alt"><span/></a>
                 </td>
             </tr>

@@ -32,10 +32,7 @@ builder.Services.AddMvc(x =>
 {
 
 });
-builder.Services.AddScoped<ApplicationDbContext>();
-builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
-builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
-builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+
 
 var app = builder.Build();
 
