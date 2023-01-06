@@ -106,7 +106,19 @@ namespace Dev.AppMvc.Controllers
             await _fornecedorRepository.Deletar(id);
 
             return RedirectToAction(nameof(Index));
-        }       
+        }
+        public async Task<IActionResult> AtualizarEndereco(Guid id)
+        {
+            var fornecedor = await ObeterFornecedorEndereco(id);
+
+            if (fornecedor == null)
+            {
+                return NotFound();
+            }
+            return PartialView("_AtualizarEndereco",new FornecedorViewModel { Endereco = fornecedor.Endereco})
+            
+        }
+
         private async Task<FornecedorViewModel> ObeterFornecedorEndereco(Guid id)
         {
             return _mapper.Map<FornecedorViewModel>(await _fornecedorRepository.ObterFornecedorEndereco(id));
