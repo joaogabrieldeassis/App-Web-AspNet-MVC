@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xAzyiRDlfjSjOufUOHBDhwBp78dMWT1LXeyNKi8JH6hyyrSsiBtLJutIRZhMio4oVSc9XUMvjiwSKT6dEWrRLg==",
+  "dgSpecHash": "5KJcb4V/Yj+OjdrYNwlbTU6JITGROk/7cKnqqaORETtcZn8L0ajcztWvQj2gBtE4HMV2++Ho2SxICjC7nZrs+w==",
   "success": true,
   "projectFilePath": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\Dev.Bussines\\Dev.Bussines.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512"
+  ],
   "logs": []
 }
