@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dev.Bussines.Service
+namespace Dev.Bussines.Validation
 {
-    public abstract class BaseService
+    internal class FornecedorValidation
     {
     }
 }

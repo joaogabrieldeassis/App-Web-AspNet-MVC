@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MinhaAp.Busines.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,8 @@ namespace Dev.Bussines.Interfaces
 {
     public interface IProdutoService
     {
+        Task Adicionar(Produto produto);
+        Task Atualizar(Produto produto);
+        Task Remover(Guid id);       
     }
 }
