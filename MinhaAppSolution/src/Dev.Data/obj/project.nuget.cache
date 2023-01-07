@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UYvjRiRIj2+VAC9GqHPdirTYiRkZp0htOggTHCI3wkzh1N5sq+dxgC9K1RqUscUCnfmLrAZx9q/BzY00nyR4jA==",
+  "dgSpecHash": "rh9ItPimql2cDCcCsrBZnZVCVlTRVjxVtwfAGO5xx+JZ5sii72eL1c6xZoeP8SI+E2m5cfWHiIJqN+Z+iphE3w==",
   "success": true,
   "projectFilePath": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\Dev.Data\\Dev.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

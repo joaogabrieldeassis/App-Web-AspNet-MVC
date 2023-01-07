@@ -7,8 +7,8 @@ namespace Dev.Bussines.Model.Validation
     {
         public FornecedorValidation()
         {
-            RuleFor(x => x.Nome)
-                .
+            RuleFor(x => x.Nome);
+                
         }
     }
 }

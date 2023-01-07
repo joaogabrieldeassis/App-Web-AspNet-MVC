@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -50,12 +51,12 @@ namespace Dev.Data.Repository
 
         public virtual async Task Deletar(Guid id)
         {
-            
-            _entities.Remove(new TEntity { Id = id});
+            var entity = _entities.AsNoTracking().FirstOrDefaultAsync(x=>x.Id == id);
+            _entities.Remove(await entity);
             await SaveChanges();
         }
 
-        public async Task<int> SaveChanges() => await _context.SaveChangesAsync();
+        public async Task<int> SaveChanges() =>  _context.SaveChanges();
 
         public void Dispose() => _context?.Dispose();
     }
