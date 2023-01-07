@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aZMbRI4e7sbJlbO1chGmy8l2W/uRCaiaK0XQcs2ur6OC1u0SSa8gePjDTSfIaG2ynrttF3C0Eut8XdNGJuWtVQ==",
+  "dgSpecHash": "XsDY5YPkf/FDkRsBL3JJa4JqzU8Hao/CKUMXMl9QnW3dCnZPHvISB8o4X45LqQNO0776XwoHYgukZk/cG6c1HA==",
   "success": true,
   "projectFilePath": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\Dev.AppMvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\Windows\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
