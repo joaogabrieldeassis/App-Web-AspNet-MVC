@@ -1,4 +1,6 @@
 using Dev.Bussines.Interfaces;
+using Dev.Bussines.Notificacoes;
+using Dev.Bussines.Service;
 using Dev.Data.Context;
 using Dev.Data.Repository;
 using Microsoft.AspNetCore.Identity;
@@ -36,6 +38,9 @@ builder.Services.AddScoped<ApplicationDbContext>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+builder.Services.AddScoped<INotificador, Notificador>();
+builder.Services.AddScoped<IFornecedorService, FornecedorService>();
+builder.Services.AddScoped<IProdutoService, ProdutoService>();
 
 var app = builder.Build();
 
