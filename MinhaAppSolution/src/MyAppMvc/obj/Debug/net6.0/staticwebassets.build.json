@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qzJobMcqjI6C9ny6qIj1UYPoJbh1k/E61vqXGed2w4s=",
+  "Hash": "2ueI4uadKAG+E03fVs6js0DJhkVgzo6hzPYbqS8UD0A=",
   "Source": "Dev.AppMvc",
   "BasePath": "_content/Dev.AppMvc",
   "Mode": "Default",
@@ -136,12 +136,12 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\aaea4c63-186b-459d-83e1-a464742d85c5_Desing.jpg"
     },
     {
-      "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\Imagens\\Produto.jpeg",
+      "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\Imagens\\endereco.webp",
       "SourceId": "Dev.AppMvc",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\",
       "BasePath": "_content/Dev.AppMvc",
-      "RelativePath": "Imagens/Produto.jpeg",
+      "RelativePath": "Imagens/endereco.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,7 +150,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produto.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\endereco.webp"
+    },
+    {
+      "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\Imagens\\fornecedor.webp",
+      "SourceId": "Dev.AppMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\",
+      "BasePath": "_content/Dev.AppMvc",
+      "RelativePath": "Imagens/fornecedor.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\fornecedor.webp"
+    },
+    {
+      "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\Imagens\\produtoAtualizado.webp",
+      "SourceId": "Dev.AppMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\",
+      "BasePath": "_content/Dev.AppMvc",
+      "RelativePath": "Imagens/produtoAtualizado.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\produtoAtualizado.webp"
     },
     {
       "Identity": "C:\\App-Web-AspNet-MVC\\MinhaAppSolution\\src\\MyAppMvc\\wwwroot\\js\\site.js",
