@@ -11,14 +11,16 @@ namespace Dev.AppMvc.Controllers
         private readonly IProdutoRepository _produtoRepository;
         private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IMapper _mapper;
-
+        private readonly IProdutoService _produtoService;
         public ProdutOsController(IProdutoRepository produtoRepository,
             IFornecedorRepository fornecedorRepository,
-            IMapper mapper)
+            IMapper mapper,
+            IProdutoService produtoService,INotificador notificador):base(notificador)
         {
             _produtoRepository = produtoRepository;
             _fornecedorRepository = fornecedorRepository;
             _mapper = mapper;
+            _produtoService = produtoService;
         }
 
 
@@ -61,8 +63,9 @@ namespace Dev.AppMvc.Controllers
                 return View(produtoViewModel);
             }
             produtoViewModel.Imagem = imagemPrefixo + produtoViewModel.ImagemUplade.FileName;
-            await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
-
+            await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
+            if (!OperacaoValida()) return View(produtoViewModel);
+            
             return RedirectToAction(nameof(Index));
         }
 
@@ -104,8 +107,9 @@ namespace Dev.AppMvc.Controllers
             produtoViewModelAtualizacao.Valor = produtoViewModel.Valor;
             produtoViewModelAtualizacao.Ativo = produtoViewModel.Ativo;
 
-            await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoViewModelAtualizacao));
-                return RedirectToAction(nameof(Index));                                    
+            await _produtoService.Atualizar(_mapper.Map<Produto>(produtoViewModelAtualizacao));
+            if (!OperacaoValida()) return View(produtoViewModel);
+            return RedirectToAction(nameof(Index));                                    
         }
 
         [Route("excluir-Produto/{id:guid}")]
@@ -131,8 +135,8 @@ namespace Dev.AppMvc.Controllers
             {
                 return NotFound();
             }
-            await _produtoRepository.Deletar(id);
-
+            await _produtoService.Remover(id);
+            if (!OperacaoValida()) return View(produto);
             return RedirectToAction(nameof(Index));
         }
 

@@ -10,11 +10,12 @@ namespace Dev.AppMvc.Controllers
     {
         private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IMapper _mapper;
-
-        public FornecedoresController(IFornecedorRepository fornecedorRepository,IMapper mapper)
+        private readonly IFornecedorService _fornecedorService;
+        public FornecedoresController(IFornecedorRepository fornecedorRepository,IMapper mapper, IFornecedorService fornecedorService,INotificador notificador):base(notificador)
         {
             _mapper = mapper;
             _fornecedorRepository = fornecedorRepository;
+            _fornecedorService = fornecedorService;
         }
         [Route("lista-de-fornecedores")]
         public async Task<IActionResult> Index()
@@ -49,7 +50,7 @@ namespace Dev.AppMvc.Controllers
             if (!ModelState.IsValid) return View(fornecedorViewModel);
 
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
-            _fornecedorRepository.Adicionar(fornecedor);
+            _fornecedorService.Adicionar(fornecedor);
                 return RedirectToAction(nameof(Index));
             
             return View(fornecedorViewModel);
@@ -79,7 +80,7 @@ namespace Dev.AppMvc.Controllers
                 
 
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
-            await _fornecedorRepository.Atualizar(fornecedor);
+            await _fornecedorService.Atualizar(fornecedor);
 
             return RedirectToAction(nameof(Index));
         }
@@ -104,7 +105,7 @@ namespace Dev.AppMvc.Controllers
 
             if (fornecedorViewModel == null) return NotFound();
 
-            await _fornecedorRepository.Deletar(id);
+            await _fornecedorService.Remover(id);
 
             return RedirectToAction(nameof(Index));
         }
