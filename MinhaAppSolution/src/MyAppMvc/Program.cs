@@ -38,9 +38,6 @@ builder.Services.AddScoped<ApplicationDbContext>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
-builder.Services.AddScoped<INotificador, Notificador>();
-builder.Services.AddScoped<IFornecedorService, FornecedorService>();
-builder.Services.AddScoped<IProdutoService, ProdutoService>();
 
 var app = builder.Build();
 

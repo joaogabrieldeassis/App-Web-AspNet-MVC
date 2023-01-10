@@ -9,13 +9,11 @@ namespace Dev.AppMvc.Controllers
     public class FornecedoresController : BaseControllerBase
     {
         private readonly IFornecedorRepository _fornecedorRepository;
-        private readonly IMapper _mapper;
-        private readonly IFornecedorService _fornecedorService;
-        public FornecedoresController(IFornecedorRepository fornecedorRepository,IMapper mapper, IFornecedorService fornecedorService,INotificador notificador):base(notificador)
+        private readonly IMapper _mapper;        
+        public FornecedoresController(IFornecedorRepository fornecedorRepository,IMapper mapper, INotificador notificador):base(notificador)
         {
             _mapper = mapper;
-            _fornecedorRepository = fornecedorRepository;
-            _fornecedorService = fornecedorService;
+            _fornecedorRepository = fornecedorRepository;            
         }
         [Route("lista-de-fornecedores")]
         public async Task<IActionResult> Index()
@@ -50,7 +48,8 @@ namespace Dev.AppMvc.Controllers
             if (!ModelState.IsValid) return View(fornecedorViewModel);
 
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
-            _fornecedorService.Adicionar(fornecedor);
+            await _fornecedorRepository.Adicionar(fornecedor);            
+            
                 return RedirectToAction(nameof(Index));
             
             return View(fornecedorViewModel);
@@ -80,7 +79,8 @@ namespace Dev.AppMvc.Controllers
                 
 
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
-            await _fornecedorService.Atualizar(fornecedor);
+            await _fornecedorRepository.Atualizar(fornecedor);
+           
 
             return RedirectToAction(nameof(Index));
         }
@@ -105,8 +105,7 @@ namespace Dev.AppMvc.Controllers
 
             if (fornecedorViewModel == null) return NotFound();
 
-            await _fornecedorService.Remover(id);
-
+            await _fornecedorRepository.Deletar(id);            
             return RedirectToAction(nameof(Index));
         }
         public async Task<IActionResult> AtualizarEndereco(Guid id)

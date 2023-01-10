@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <Folder Include="Configurations\" />
-    <Folder Include="Views\Shared\Components\Sumary\" />
     <Folder Include="wwwroot\Imagens\" />
   </ItemGroup>
 
